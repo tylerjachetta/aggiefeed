@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "857A4AB2-6930-421F-92A3-E815716288BD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "aggiefeed/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - 2d93f30624fa6123"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.titleLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - e61e20f3f5c3c53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.titleLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - 1217fadd22fb882e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.titleLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - 50ca0f61010f4956"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.titleLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - ea8ddece212e8274"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; aggiefeed.DetailViewController"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "B7DAE388-EDAB-46B8-BF04-3DACFDEEEDCC - 2167433bbdd7ee8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;aggiefeed.DetailViewController&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "aggiefeed/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - a55c9d2c4d2ceb8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.displayNameLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - 2abef6b965f14f98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.displayNameLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - f44cebdc415d328b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.displayNameLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - a29513ebd0699ab8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.displayNameLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - ea8ddece212e8274"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; aggiefeed.DetailViewController"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "322">
+               </Location>
+               <Location
+                  uuid = "0C76C013-FF7D-42EB-9B4E-4146EDC7559B - 2167433bbdd7ee8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;aggiefeed.DetailViewController&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "aggiefeed/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D - 7931123a6989e4bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.__deallocating_deinit"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D - afbe3082e7c2e4c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; aggiefeed.DetailViewController"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D - ea8ddece212e8274"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; aggiefeed.DetailViewController"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D - f7b02b0ef2b4ef8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;aggiefeed.DetailViewController&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "11B6ACFA-125C-4E8E-A5A7-CBACCA68FD9D - 2167433bbdd7ee8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aggiefeed.DetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;aggiefeed.DetailViewController&gt;"
+                  moduleName = "aggiefeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
