@@ -17,8 +17,6 @@ class DetailViewController: UIViewController {
     var cell:Cell?
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backBarButtonItem = UIBarButtonItem(
-        title: "Something Else", style: .plain, target: nil, action: nil)
         populateText()
 
     }

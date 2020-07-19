@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-9e-xaN">
-                        <rect key="frame" x="15" y="12" width="401" height="87"/>
+                        <rect key="frame" x="15" y="7.5" width="401" height="91.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-Ai-Rsq">
-                                <rect key="frame" x="8" y="21" width="381" height="45"/>
+                                <rect key="frame" x="8" y="21" width="381" height="49.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                     <constraint firstAttribute="trailing" secondItem="T6T-9e-xaN" secondAttribute="trailing" constant="15" id="IHd-rB-KB0"/>
                     <constraint firstItem="T6T-9e-xaN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Z1y-pd-O2T"/>
                     <constraint firstAttribute="bottom" secondItem="T6T-9e-xaN" secondAttribute="bottom" id="aSq-OR-eke"/>
-                    <constraint firstItem="T6T-9e-xaN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="eqN-I6-Ab6"/>
+                    <constraint firstItem="T6T-9e-xaN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="eqN-I6-Ab6"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>

@@ -13,6 +13,13 @@ class ViewController: UIViewController  {
 
     @IBOutlet var table: UITableView!
     
+    var refresher: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .black
+        refreshControl.addTarget(self, action: #selector(getNewCells), for: .valueChanged)
+        return refreshControl
+    }()
+    
     var listOfCells = [Cell]() {
         didSet {
             DispatchQueue.main.async {
@@ -31,8 +38,16 @@ class ViewController: UIViewController  {
         table.delegate = self
         table.dataSource = self
         // Do any additional setup after loading the view.
-        navigationItem.title = "Aggie Feed"
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(self.getNewCells))
+        table.refreshControl = refresher
+        navigationItem.title = "Aggie Feed" 
         navigationController?.navigationBar.barStyle = .black
+        getNewCells()
+    }
+    
+    
+    @objc func getNewCells(){
+        navigationItem.rightBarButtonItem?.isEnabled = false
         let cellsRequest = CellsRequest()
         cellsRequest.getData { [weak self] result in
             switch result {
@@ -42,6 +57,10 @@ class ViewController: UIViewController  {
                 self?.listOfCells = cells
             }
         }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .milliseconds(700)) {
+            self.refresher.endRefreshing()
+        }
+        navigationItem.rightBarButtonItem?.isEnabled = true
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -61,8 +80,7 @@ class ViewController: UIViewController  {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCell = listOfCells[indexPath.row]
-        performSegue(withIdentifier: "MasterToDetail", sender: selectedCell)
+        performSegue(withIdentifier: "MasterToDetail", sender: listOfCells[indexPath.row])
     }
 }
 
