@@ -14,7 +14,7 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet var title: UILabel!
     @IBOutlet var displayName: UILabel!
-    
+    @IBOutlet var rectangleContainer: UIView!
     static func nib() -> UINib{
         return UINib(nibName: "CustomTableViewCell", bundle: nil)
     }
@@ -22,6 +22,7 @@ class CustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        rectangleContainer.layer.cornerRadius = 7.5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -33,7 +33,6 @@ struct CellsRequest {
                 let cellJson = try decoder.decode([Cell].self, from: jsonData)
                 completion(.success(cellJson))
             } catch {
-                print(error.localizedDescription)
                 completion(.failure(.failedDataProcessing))
             }
         }

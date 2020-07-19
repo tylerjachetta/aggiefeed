@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController  {
 
     @IBOutlet var table: UITableView!
@@ -19,6 +20,10 @@ class ViewController: UIViewController  {
             }
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,8 @@ class ViewController: UIViewController  {
         table.delegate = self
         table.dataSource = self
         // Do any additional setup after loading the view.
+        navigationItem.title = "Aggie Feed"
+        navigationController?.navigationBar.barStyle = .black
         let cellsRequest = CellsRequest()
         cellsRequest.getData { [weak self] result in
             switch result {
@@ -38,10 +45,13 @@ class ViewController: UIViewController  {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        return 100
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
         if segue.identifier == "MasterToDetail" {
             let destVC = segue.destination as! DetailViewController
             destVC.cell = sender as? Cell
