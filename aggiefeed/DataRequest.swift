@@ -28,7 +28,6 @@ struct CellsRequest {
                 completion(.failure(.failedDataRetrieval))
                 return
             }
-            print(String(data: jsonData, encoding: .utf8)!)
             do {
                 let decoder = JSONDecoder()
                 let cellJson = try decoder.decode([Cell].self, from: jsonData)

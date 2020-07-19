@@ -21,19 +21,9 @@ class DetailViewController: UIViewController {
     }
     
     func populateText() {
-        titleLabel.text = cell?.title
-        displayNameLabel.text = cell?.actor.displayName
-        objectTypeLabel.text = cell?.object.objectType
-        publishedLabel.text = formatDateStr(dateString: cell!.published)
+        titleLabel.text = String(htmlEncodedString: cell?.title ?? "No title found.")
+        displayNameLabel.text = String(htmlEncodedString: cell?.actor.displayName ?? "No name found.")
+        objectTypeLabel.text = String(htmlEncodedString: cell?.object.objectType ?? "No type found")
+        publishedLabel.text = String(dateString: cell?.published ?? "No published date found")
     }
-
-    func formatDateStr(dateString: String) -> String {
-        let dateFormatterGet = DateFormatter()
-        dateFormatterGet.dateFormat = "YYYY-mm-dd'T'HH:mm:ss.SSSZ"
-        let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "MMM dd, yyyy ' at ' hh:mm a"
-        let date = dateFormatterGet.date(from: dateString)
-        return dateFormatterPrint.string(from: date!)
-    }
-
 }

@@ -53,9 +53,7 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCell = listOfCells[indexPath.row]
         performSegue(withIdentifier: "MasterToDetail", sender: selectedCell)
-        
     }
-    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -65,8 +63,8 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
-        cell.title.text = listOfCells[indexPath.row].title
-        cell.displayName.text = listOfCells[indexPath.row].actor.displayName
+        cell.title.text = String(htmlEncodedString: listOfCells[indexPath.row].title)
+        cell.displayName.text = String(htmlEncodedString: listOfCells[indexPath.row].actor.displayName)
         return cell
     }
 }
