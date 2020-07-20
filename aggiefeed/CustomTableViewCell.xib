@@ -3,20 +3,21 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="aggiefeed" customModuleProvider="target">
+        <tableViewCell opaque="NO" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="aggiefeed" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="431" height="99"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" semanticContentAttribute="forceLeftToRight" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="431" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-9e-xaN">
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-9e-xaN">
                         <rect key="frame" x="15" y="7.5" width="401" height="91.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-Ai-Rsq">
@@ -32,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rW3-Ai-Rsq" secondAttribute="trailing" constant="12" id="B0z-Zd-1bu"/>
                             <constraint firstItem="rW3-Ai-Rsq" firstAttribute="top" secondItem="T6T-9e-xaN" secondAttribute="top" constant="21" id="GcZ-N6-EX7"/>
@@ -45,6 +46,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="Background"/>
                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="T6T-9e-xaN" secondAttribute="trailing" constant="15" id="IHd-rB-KB0"/>
@@ -63,4 +65,9 @@
             <point key="canvasLocation" x="218.11594202898553" y="137.61160714285714"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.88618987800000004" green="0.88633567089999998" blue="0.88615900280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

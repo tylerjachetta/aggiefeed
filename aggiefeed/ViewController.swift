@@ -15,7 +15,7 @@ class ViewController: UIViewController  {
     
     var refresher: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.tintColor = .black
+        refreshControl.tintColor = UIColor(named: "Gold")
         refreshControl.addTarget(self, action: #selector(getNewCells), for: .valueChanged)
         return refreshControl
     }()
