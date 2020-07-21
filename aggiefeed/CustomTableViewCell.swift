@@ -22,8 +22,19 @@ class CustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        rectangleContainer.layer.cornerRadius = 7.5
         self.selectionStyle = .none
+        
+        rectangleContainer.layer.cornerRadius = 7.5
+        rectangleContainer.layer.shadowColor = UIColor.darkGray.cgColor
+        rectangleContainer.layer.shadowOpacity = 0.25
+        rectangleContainer.layer.shadowOffset = .zero
+        rectangleContainer.layer.shadowRadius = 7.5
+        
+        title.numberOfLines = 0
+        displayName.numberOfLines = 0
+        title.sizeToFit()
+        displayName.sizeToFit()
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

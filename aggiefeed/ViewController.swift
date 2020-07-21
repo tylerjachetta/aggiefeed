@@ -15,7 +15,7 @@ class ViewController: UIViewController  {
     
     var refresher: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.tintColor = UIColor(named: "Gold")
+        refreshControl.tintColor = UIColor(named: "Aggie Gold")
         refreshControl.addTarget(self, action: #selector(getNewCells), for: .valueChanged)
         return refreshControl
     }()
@@ -34,10 +34,10 @@ class ViewController: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         table.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
-        // Do any additional setup after loading the view.
         navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(self.getNewCells))
         table.refreshControl = refresher
         navigationItem.title = "Aggie Feed" 

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:aggiefeed.xcodeproj">
+      location = "group:/Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/LaunchScreen.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tylerjachetta/Desktop/aggiefeed/aggiefeed/Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

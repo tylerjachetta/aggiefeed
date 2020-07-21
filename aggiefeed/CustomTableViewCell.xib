@@ -20,14 +20,20 @@
                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-9e-xaN">
                         <rect key="frame" x="15" y="7.5" width="401" height="91.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-Ai-Rsq">
-                                <rect key="frame" x="8" y="21" width="381" height="49.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-Ai-Rsq">
+                                <rect key="frame" x="8" y="21" width="381" height="60"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Title">
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="redraw" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="displayName" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvM-7j-lBr">
-                                <rect key="frame" x="98" y="8" width="291" height="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="redraw" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="displayName" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvM-7j-lBr">
+                                <rect key="frame" x="8" y="8" width="379" height="13"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,12 +43,12 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rW3-Ai-Rsq" secondAttribute="trailing" constant="12" id="B0z-Zd-1bu"/>
                             <constraint firstItem="rW3-Ai-Rsq" firstAttribute="top" secondItem="T6T-9e-xaN" secondAttribute="top" constant="21" id="GcZ-N6-EX7"/>
-                            <constraint firstItem="rW3-Ai-Rsq" firstAttribute="centerY" secondItem="T6T-9e-xaN" secondAttribute="centerY" id="HX8-ZI-1iS"/>
+                            <constraint firstItem="rW3-Ai-Rsq" firstAttribute="centerY" secondItem="T6T-9e-xaN" secondAttribute="centerY" constant="5.25" id="HX8-ZI-1iS"/>
                             <constraint firstItem="hvM-7j-lBr" firstAttribute="top" secondItem="T6T-9e-xaN" secondAttribute="top" constant="8" id="I6R-XP-cP5"/>
                             <constraint firstItem="rW3-Ai-Rsq" firstAttribute="top" secondItem="hvM-7j-lBr" secondAttribute="bottom" id="Ik5-GK-Y7B"/>
-                            <constraint firstItem="hvM-7j-lBr" firstAttribute="trailing" secondItem="rW3-Ai-Rsq" secondAttribute="trailing" id="c52-TX-Xff"/>
+                            <constraint firstItem="hvM-7j-lBr" firstAttribute="trailing" secondItem="rW3-Ai-Rsq" secondAttribute="trailing" constant="-2" id="c52-TX-Xff"/>
                             <constraint firstItem="rW3-Ai-Rsq" firstAttribute="leading" secondItem="T6T-9e-xaN" secondAttribute="leadingMargin" id="lXM-qH-1k3"/>
-                            <constraint firstItem="hvM-7j-lBr" firstAttribute="leading" secondItem="T6T-9e-xaN" secondAttribute="leading" constant="98" id="sy2-jg-ZUI"/>
+                            <constraint firstItem="hvM-7j-lBr" firstAttribute="leading" secondItem="T6T-9e-xaN" secondAttribute="leading" constant="8" id="sy2-jg-ZUI"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -67,7 +73,7 @@
     </objects>
     <resources>
         <namedColor name="Background">
-            <color red="0.88618987800000004" green="0.88633567089999998" blue="0.88615900280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.88599997758865356" green="0.88599997758865356" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
