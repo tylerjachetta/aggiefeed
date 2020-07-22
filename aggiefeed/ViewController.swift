@@ -12,7 +12,8 @@ import UIKit
 class ViewController: UIViewController  {
 
     @IBOutlet var table: UITableView!
-    
+    static let detailSegueID = "MasterToDetail"
+
     var refresher: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.tintColor = UIColor(named: "Aggie Gold")
@@ -29,7 +30,7 @@ class ViewController: UIViewController  {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .darkContent
+        return .lightContent
     }
 
     override func viewDidLoad() {
@@ -38,10 +39,12 @@ class ViewController: UIViewController  {
         table.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
-        navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(self.getNewCells))
         table.refreshControl = refresher
-        navigationItem.title = "Aggie Feed" 
+        
+        navigationItem.title = "Aggie Feed"
         navigationController?.navigationBar.barStyle = .black
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(self.getNewCells))
+        
         getNewCells()
     }
     
@@ -71,7 +74,7 @@ class ViewController: UIViewController  {
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
-        if segue.identifier == "MasterToDetail" {
+        if segue.identifier == ViewController.detailSegueID {
             let destVC = segue.destination as! DetailViewController
             destVC.cell = sender as? Cell
         }
@@ -80,7 +83,13 @@ class ViewController: UIViewController  {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "MasterToDetail", sender: listOfCells[indexPath.row])
+        performSegue(withIdentifier: ViewController.detailSegueID, sender: listOfCells[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.8, animations: {
+            cell.contentView.alpha = 1
+        })
     }
 }
 
@@ -93,6 +102,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
         cell.title.text = String(htmlEncodedString: listOfCells[indexPath.row].title)
         cell.displayName.text = String(htmlEncodedString: listOfCells[indexPath.row].actor.displayName)
+        cell.contentView.alpha = 0
         return cell
     }
 }
